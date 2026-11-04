@@ -1,10 +1,23 @@
 import os
+from colorama import Fore, Style, init
 azazel=[]
 
 def incluir():
  item=input("Digite o que incluir: ")
  azazel.append(item)
- return
+ print('Item incluido com sucesso!')
+
+def apagar():
+ item = input("Digite o que deseja apagar: ")
+ if item in azazel:
+     azazel.remove(item)
+ else: 
+     print(f"{Fore.RED}item não encontrado ...{Style.RESER_ALL}")
+
+def listar():
+ item = len(azazel)
+
+
      
 while True:
       os.system('cls') 
