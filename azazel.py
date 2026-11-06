@@ -18,7 +18,7 @@ def apagar():
 def listar():
  print(f"{Fore.LIGHTBLUE_EX}Itens na lista:")
  for item in azazel:
-     print(f"- {item}")
+     print(f" {item}")
 
 
 
